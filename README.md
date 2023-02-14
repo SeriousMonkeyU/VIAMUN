@@ -18,3 +18,5 @@ using support programs, such as: Astah, DataGrip, Intellij IDEA.
 The result of the project is a completely functioning system, featuring multi
 window view, between sixteen different users, connected by server-client relation, with
 simplistic user interface.
+
+This is the copy of the work that was achieved by the team of 4 people during semester 2 of Software Engineering studies.
