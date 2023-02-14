@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="829.0" stylesheets="@../../../shared/stylesheets/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.publicChat.PublicChatController">
+      <children>
+          <SplitPane dividerPositions="0.25" layoutX="173.0" layoutY="123.0" prefHeight="585.0" prefWidth="829.0" styleClass="backgroundColor" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                      <children>
+                  <VBox prefHeight="583.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label maxWidth="900.0" prefHeight="36.0" text="Countries">
+                           <font>
+                              <Font name="Stencil" size="24.0" />
+                           </font>
+                        </Label>
+                                <ListView fx:id="activeUsersContainer" prefHeight="506.0" prefWidth="204.0" styleClass="backgroundColorCompliment" />
+                        <Button maxWidth="900.0" mnemonicParsing="false" onAction="#onDisconnectButton" prefHeight="45.0" prefWidth="199.0" styleClass="menuButton" text="Back" />
+                     </children>
+                  </VBox>
+                      </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                      <children>
+                  <VBox layoutY="4.0" prefHeight="583.0" prefWidth="579.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="chat" maxWidth="900.0" prefHeight="35.0" prefWidth="592.0" text="Chat">
+                           <font>
+                              <Font name="Stencil" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <ScrollPane fx:id="messagesScrollPane" prefHeight="509.0" prefWidth="752.0">
+                           <content>
+                              <VBox fx:id="messagesContainer" prefHeight="507.0" prefWidth="615.0" styleClass="transparent" />
+                           </content>
+                           <styleClass>
+                              <String fx:value="backgroundColor" />
+                              <String fx:value="BackgroundImage" />
+                           </styleClass>
+                        </ScrollPane>
+                        <HBox maxWidth="900.0" prefHeight="40.0" prefWidth="578.0">
+                           <children>
+                                                  <TextField fx:id="messageInputField" maxWidth="900.0" prefHeight="37.0" prefWidth="503.0" />
+                              <Button mnemonicParsing="false" onAction="#onSendButton" prefHeight="40.0" prefWidth="77.0" text="Send" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                      </children>
+                  </AnchorPane>
+              </items>
+          </SplitPane>
+      </children>
+  </AnchorPane>

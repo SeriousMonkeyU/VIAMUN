@@ -1,0 +1,108 @@
+.backgroundColor{
+    -fx-background-color: #CDD6E2;
+}
+
+.backgroundColorCompliment{
+    -fx-background-color: #E0EAF7;
+}
+
+.transparent{
+    -fx-background-color: transparent;
+}
+
+.left{
+    -fx-alignment: center-left;
+}
+
+.right{
+    -fx-alignment: center-right;
+}
+
+.vBoxMessageContainer{
+    -fx-padding: 0px;
+}
+
+.LoginLogo{
+    -fx-background-color: #CDD6E2;
+    -fx-background-image:url('../pictures/viaLogo.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center top;
+}
+
+.MenuIcon{
+    -fx-background-color: #CDD6E2;
+    -fx-background-image:url('../pictures/menuIcon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center top;
+}
+
+.BackgroundImage{
+    -fx-background-color: transparent;
+    -fx-background-image:url('../pictures/chess.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center bottom;
+}
+
+.BackgroundImageMain{
+    -fx-background-color: transparent;
+    -fx-background-image:url('../pictures/unitedNations.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center bottom;
+}
+.messageUsernameLabel{
+    -fx-padding: 0 15 0 15;
+    -fx-text-fill: white;
+}
+.messageBodyLabel{
+    -fx-background-color: rgba(224, 234, 247, 0.75);
+    -fx-background-radius: 50px;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-font-family:"Courier New";
+    -fx-max-width: 500px;
+    -fx-padding: 5 15 5 15;
+}
+
+.table-row-cell:odd,
+.table-row-cell:filled:odd{
+    -fx-background-color: #BAC2CE;
+}
+
+.table-row-cell:even,
+.table-row-cell:filled:even{
+    -fx-background-color: #CDD6E2;
+}
+
+Button{
+    -fx-background-color: #BDBDBD;
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+}
+
+Button:hover{
+    -fx-background-color: #b1b1b1;
+    -fx-background-radius: 5px;
+    -fx-font-weight: bold;
+}
+
+.menuButton{
+    -fx-background-color: #CDD6E2;
+    -fx-background-radius: 0px;
+}
+
+.menuButton:hover{
+    -fx-background-color: #BDC7D3;
+    -fx-background-radius: 0px;
+}
+
+ScrollPane > .viewport{
+    -fx-background-color: transparent;
+}
+
+.list-cell:odd{
+    -fx-background-color: #E0EAF7;
+}
+
+.list-cell:even{
+    -fx-background-color: #CDD6E2;
+}

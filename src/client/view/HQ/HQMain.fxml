@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.HQ.HQMainViewController">
+    <children>
+        <SplitPane dividerPositions="0.12" layoutX="66.0" layoutY="200.0" prefHeight="400.0" prefWidth="800.0" styleClass="backgroundColor" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="86.0" styleClass="MenuIcon">
+                    <children>
+                  <VBox layoutY="41.0" prefHeight="457.0" prefWidth="105.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                     <children>
+                              <Button maxWidth="900.0" mnemonicParsing="false" onAction="#refresh" prefHeight="45.0" prefWidth="90.0" styleClass="menuButton" text="Refresh" />
+                              <Button maxWidth="900.0" mnemonicParsing="false" onAction="#onLogOut" prefHeight="45.0" prefWidth="90.0" styleClass="menuButton" text="Log Out" />
+                     </children>
+                  </VBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="355.0" prefWidth="662.0">
+                    <children>
+                        <TableView fx:id="newsflashTable" layoutX="11.0" layoutY="97.0" prefHeight="332.0" prefWidth="639.0">
+                            <columns>
+                                <TableColumn fx:id="bodyColumn" prefWidth="289.0" text="Newsflash" />
+                                <TableColumn fx:id="termColumn" prefWidth="111.0" text="Term" />
+                                <TableColumn fx:id="publicityColumn" prefWidth="111.0" text="Publicity" />
+                                <TableColumn fx:id="timeColumn" prefWidth="127.0" text="Time sent" />
+                            </columns>
+                        </TableView>
+                        <ButtonBar layoutX="419.0" layoutY="436.0" prefHeight="40.0" prefWidth="221.0">
+                            <buttons>
+
+                                <ComboBox fx:id="comboBox" prefHeight="25.0" prefWidth="147.0">
+
+                                </ComboBox>
+                                <Button minWidth="68.0" mnemonicParsing="false" onAction="#changeStatus" prefHeight="9.0" text="Set" />
+                            </buttons>
+                        </ButtonBar>
+                        <AnchorPane layoutX="670.0" layoutY="217.0" prefHeight="93.0" prefWidth="89.0" styleClass="transparent">
+                            <children>
+                                <Label fx:id="newsflashesLeft" layoutX="19.0" layoutY="7.0" text="44">
+                                    <effect>
+                                        <DropShadow height="10.0" offsetX="2.0" offsetY="2.0" radius="5.0" width="12.0" />
+                                    </effect>
+                                    <font>
+                                        <Font name="VTMB_DlgIntimidation3" size="58.0" />
+                                    </font>
+                                </Label>
+                                <Text layoutX="6.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Newsflashes left:" />
+                            </children>
+                        </AnchorPane>
+                        <Label layoutX="208.0" layoutY="27.0" text="NewsFlashes">
+                            <font>
+                                <Font name="Stencil" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+               <styleClass>
+                  <String fx:value="backgroundColor" />
+                  <String fx:value="BackgroundImageMain" />
+               </styleClass>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
